@@ -1,4 +1,4 @@
-module tb_top ();
+module tb_converter ();
 
     reg clk;
     reg rst;
@@ -16,7 +16,7 @@ module tb_top ();
     wire [63:0] chunk_corrupted;
 
     // Instantiate the top module
-    top uut (
+    converter uut (
         .clk(clk),
         .rst(rst),
         .en(en),
